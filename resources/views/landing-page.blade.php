@@ -53,7 +53,7 @@
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#properties-section" class="nav-link">Properties</a></li>
+                <li><a href="#properties-section" class="nav-link">Explore</a></li>
                 <li><a href="#about-section" class="nav-link">About</a></li>
                 <li><a  @guest href="{{ route('login') }}" @else href="/index"  @endguest class="nav-link">Register Homestay</a></li>
                 @guest
