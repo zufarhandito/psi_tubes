@@ -53,7 +53,7 @@
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#properties-section" class="nav-link">Explore</a></li>
+                <li><a href="#properties-section" class="nav-link">Properties</a></li>
                 <li><a href="#about-section" class="nav-link">About</a></li>
                 <li><a  @guest href="{{ route('login') }}" @else href="/index"  @endguest class="nav-link">Register Homestay</a></li>
                 @guest
@@ -157,7 +157,14 @@
                 <div class="ftco-media-details">
                   <h3>{{$h->nama_homestay}} </h3>
                   <p>{{$h->location->nama_kabupaten}}</p>
-                  <h1>{{$h->harga}} </h1>
+                  <p>{{$h->deskripsi}}</p>
+                  <p>Alamat : {{$h->alamat_lengkap}}</p>
+                  <p>Fasilitas : {{$h->fasilitas}}</p>
+                  <h1>Rp.{{$h->harga}} </h1>
+                  <div class="card-footer">
+                      <a class="btn btn-primary" href="">Sewa</a>
+
+                  </div>
                 </div>
   
               </div> 
@@ -254,10 +261,11 @@
 
 
               <p class="mb-0 font-weight-bold">Email Address</p>
+              <p class="mb-0"><a href="#">18523016@students.uii.ac.id</a></p>
               <p class="mb-0"><a href="#">18523018@students.uii.ac.id</a></p>
-              <p class="mb-0"><a href="#">18523061@students.uii.ac.id</a></p>
-              <p class="mb-0"><a href="#">18523096@students.uii.ac.id</a></p>
-              <p class="mb-0"><a href="#">18523112@students.uii.ac.id</a></p>
+              <p class="mb-0"><a href="#">18523022@students.uii.ac.id</a></p>
+              <p class="mb-0"><a href="#">18523046@students.uii.ac.id</a></p>
+              
 
             </div>
             
