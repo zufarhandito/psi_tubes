@@ -28,6 +28,7 @@ class DashboardController extends Controller
         $homestay->id_kabupaten = $request->id_kabupaten;
         $homestay->id_user = $request->id_user;
         $homestay->is_verified = 'belum';
+        $homestay->harga = $request->harga;
 
         $foto = $request->file('foto');
         $nama_foto = $foto->getClientOriginalName();

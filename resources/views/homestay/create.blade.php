@@ -248,6 +248,10 @@
                     <input name = "alamat_lengkap" type="text" class="form-control" id="exampleInputAlamat">
                 </div>
 
+                 <div class="form-group">
+                    <label for="exampleInputHarga">Harga</label>
+                    <input name = "harga" type="text" class="form-control" id="exampleInputHarga">
+                </div>
              
 
                 <div class="input-group mb-3">

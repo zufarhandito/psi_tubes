@@ -72,7 +72,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Utilities:</h6>
             <a class="collapse-item">Homestay</a>
-            <a class="collapse-item" href="/homestay/create">Create Homestay</a>
+            <a class="collapse-item" href="/homestay/create">Daftarkan Homestay</a>
           </div>
         </div>
       </li>
@@ -212,6 +212,16 @@
             <strong>{{session('status')}}</strong>
         </div>
     @endif
+    <div class="card-footer">
+                      <a class="btn btn-primary" href="">Homestay Terlaris</a>
+
+                  </div>
+
+                  <div class="card-footer">
+                      <a class="btn btn-primary" href="">Pendapatan Anda</a>
+
+                  </div>
+
       <div class="row ml-2">
           <h1>List Homestay</h1>
       </div>
