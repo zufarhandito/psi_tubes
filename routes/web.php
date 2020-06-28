@@ -92,3 +92,7 @@ Route::get('/verifikasibelum','DashboardController@lihatlistverif');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/terlaris',function(){
+    return view ('MIS/terlaris');
+});
