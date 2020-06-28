@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bale-Bale</title>
+    <title>Sihomja</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -229,9 +229,9 @@
           </div>
           <div class="col-lg-6 ml-auto">
             
-            <h2 class="section-title mb-3">Bale-Bale</h2>
+            <h2 class="section-title mb-3">Sihomja</h2>
                 <p class="lead">Register and Verify Your Homestay</p>
-                <p>Bale-Bale is a website that provides homestay data collection in the Yogyakarta area. Homestay is one of the important supporting facilities in the management of a tourist village. But there are still many tourist village managers who do not understand homestay management properly. Therefore, this bale-bale site helps provide a homestay data collection so that it can be managed properly and correctly. For homestay owners who wish to register their homestays, there are a number of homestay requirements that must be met: </p>
+                <p>Sihomja is a website that provides homestay data collection in the Yogyakarta area. Homestay is one of the important supporting facilities in the management of a tourist villa Sihomja site helps provide a homestay data collection so that it can be managed properly and correctly. For homestay owners who wish to register their homestays, there are a number of homestay requirements that must be met: </p>
                 <ul class="list-unstyled ul-check success">
                   <li>Have a Building Permit</li>
                   <li>Guaranteed cleanliness</li>
