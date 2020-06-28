@@ -162,7 +162,8 @@
                   <p>Fasilitas : {{$h->fasilitas}}</p>
                   <h1>Rp.{{$h->harga}} </h1>
                   <div class="card-footer">
-                      <a class="btn btn-primary" href="">Sewa</a>
+                      <a class="btn btn-primary" onclick="return confirm('Are you sure?')" href="">Sewa</a>
+                     
 
                   </div>
                 </div>
