@@ -67,6 +67,8 @@ Route::get('/verifikasibelum', function () {
 Route::get('/upload', 'UploadController@upload');
 Route::post('/upload/proses', 'UploadController@proses_upload');
 
+Route::post('landing-page', 'HomeController@storeOrder');
+
 Route::get('showuser', function () {
 
     $pengguna = DB::table('users')->get();
@@ -74,8 +76,11 @@ Route::get('showuser', function () {
     return view(['users' => $user]);
 });
 
+Route::get('stock/add','StockController@create');
+Route::post('stock/add','StockController@store');
 
-
+Route::get('stocks','StockController@indexdua');
+Route::get('stock/chart','StockController@chart');
 Route::get('/homestay', 'DashboardController@index');
 Route::get('/homestay/create', 'DashboardController@createHomestay');
 Route::post('/homestay/create', 'DashboardController@storeHomestay');
@@ -88,7 +93,6 @@ Route::get('/showuser', 'DashboardController@showuser')->name('lihatdata');
 Route::get('/verifikasiyes','DashboardController@lihatverif');
 Route::get('/verifikasiyes/hapus/{id}','DashboardController@hapus');
 Route::get('/verifikasibelum','DashboardController@lihatlistverif');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

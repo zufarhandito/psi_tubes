@@ -25,4 +25,15 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+
+    public function storeOrder(Request $request){
+       
+        $order = new Pesan();
+        $order->nama_homestay = $request->nama_homestay;
+        $order->harga = $request->harga;
+
+        return redirect('/landing-page');
+    }
+
 }
