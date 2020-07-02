@@ -33,7 +33,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Bale-Bale</div>
+        <div class="sidebar-brand-text mx-3">Sihomja</div>
       </a>
 
       <!-- Divider -->
@@ -51,7 +51,7 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        BALE-BALE
+        Sihomja
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
@@ -65,10 +65,10 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Bale Bale Admin:</h6>
+            <h6 class="collapse-header">Sihomja Admin:</h6>
             <a class="collapse-item" href="/verifikasi">List Homestay Sudah Verif</a>
             <a class="collapse-item" href="/verifikasi">List Homestay Belum Verif</a>
-            <a class="collapse-item" href="/showuser">User Bale Bale</a>
+            <a class="collapse-item" href="/showuser">User Sihomja</a>
             <a class="collapse-item" href="/verifikasiyes">Verifikasi Homestay</a>
           </div>
         </div>

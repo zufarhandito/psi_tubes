@@ -210,9 +210,16 @@
             <strong>{{session('status')}}</strong>
         </div>
     @endif
+
+    <div class="card-footer">
+                      <a class="btn btn-primary" href="lihatorder">Lihat Order yang Masuk</a>
+                    </div>
+
     <div class="card-footer">
                       <a class="btn btn-primary" href="stock/add">Masukan Order Customer</a>
                   </div>
+
+                  
       <div class="row ml-2">
           <h1>List Homestay Sudah Verifikasi</h1>
       </div>

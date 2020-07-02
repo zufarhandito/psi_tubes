@@ -17,6 +17,12 @@ class StockController extends Controller
         return view('indekdua');
     }
 
+    public function lihat()
+    {
+        return view('lihatorder');
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -47,8 +53,8 @@ class StockController extends Controller
 
     public function chart()
       {
-        $result = \DB::table('stocks')
-                    ->where('stockName','=','Infosys')
+        $result = \DB::table('stocks') 
+                    ->DISTINCT('stockYear')
                     ->orderBy('stockYear', 'ASC')
                     ->get();
         return response()->json($result);

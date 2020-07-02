@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/css/bootstrap-select.min.css">
     </head>
     <body>
+      <div class="card-footer">
+                          <a class="btn btn-primary" href="/index">Kembali</a>
+                  </div>
       <div class="row">
        <div class="col-md-10 col-md-offset-1">
            <div class="panel panel-default">
@@ -22,6 +25,7 @@
            </div>
        </div>
      </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/js/bootstrap-select.min.js" charset="utf-8"></script>
@@ -42,12 +46,13 @@
                 var myChart = new Chart(ctx, {
                   type: 'bar',
                   data: {
-                      labels:Years,
+                      labels:Labels,
                       datasets: [{
-                          label: 'Homestay Terlaris',
+                          label: 'Berapa kali di pesan',
                           data: Prices,
                           borderWidth: 1
                       }]
+
                   },
                   options: {
                       scales: {

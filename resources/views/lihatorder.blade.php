@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard </title>
+  <title>SB Admin 2 - Dashboard Verifikasi </title>
 
   <!-- Custom fonts for this template-->
   <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -41,9 +41,9 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="/verifikasi">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Dashboard Order</span></a>
       </li>
 
       <!-- Divider -->
@@ -54,25 +54,22 @@
         Sihomja
       </div>
 
- <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Kelola Akun</span>
-        </a>
-      </li>
+      <!-- Nav Item - Pages Collapse Menu -->
+    
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
-          <span>Kelola Homestay</span>
+          <span>Verifikasi Homestay</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item">Homestay</a>
-            <a class="collapse-item" href="/homestay/create">Daftarkan Homestay</a>
+            <h6 class="collapse-header">Sihomja Admin:</h6>
+            <a class="collapse-item" href="/verifikasi">List Homestay Sudah Verif</a>
+            <a class="collapse-item" href="/verifikasibelum">List Homestay Belum Verif</a>
+            <a class="collapse-item" href="/showuser">User Sihomja</a>
+            <a class="collapse-item" href="/verifikasiyes">Verifikasi Homestay</a>
           </div>
         </div>
       </li>
@@ -175,6 +172,7 @@
                   Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
+      
                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >Logout</a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                   @csrf
@@ -212,30 +210,20 @@
             <strong>{{session('status')}}</strong>
         </div>
     @endif
+
     <div class="card-footer">
-                      <a class="btn btn-primary" href="stocks">Homestay Terlaris</a>
+                      <a class="btn btn-primary" href="lihatorder">Lihat Order yang Masuk</a>
                     </div>
 
+    <div class="card-footer">
+                      <a class="btn btn-primary" href="stock/add">Masukan Order Customer</a>
+                  </div>
+
+                  
       <div class="row ml-2">
-          <h1>List Homestay</h1>
+          <h1>List Order Customer</h1>
       </div>
-      <div class="row">
-          @foreach(Auth::user()->homestays as $homestay)
-          <div class="col-md-6">
-              <div class="card shadow mb-4">
-                  <div class="card-body">
-                      <h3>{{$homestay->nama_homestay}}</h3>
-                      <p>{{$homestay->deskripsi}}</p>
-                      <p>Rp.{{$homestay->harga}}</p>
-                  </div>
-                  <div class="card-footer">
-                      <a class="btn btn-primary" href="/homestay/edit/{{$homestay->id}}">Edit</a>
-                  </div>
-              </div>
-          </div>
-          @endforeach
-      </div>
-  </div>
+      
 
   <!-- Bootstrap core JavaScript-->
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>

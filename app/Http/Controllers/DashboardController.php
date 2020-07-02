@@ -9,6 +9,7 @@ use App\Homestay;
 use App\User;
 use App\Homestay_verif;
 
+
 class DashboardController extends Controller
 {
     public function createHomestay(){
@@ -16,6 +17,23 @@ class DashboardController extends Controller
         return view('homestay.create', compact('kabupatens'));
     }
 
+    public function createOrder(){
+        return view('landing-page');
+    }
+
+    public function storeOrder(){
+       
+        DB::setFetchMode(PDO::FETCH_ASSOC);
+   $table_records = DB::connection('bale_bale')->select("SELECT * from homestay");     
+   DB::setFetchMode(PDO::FETCH_CLASS); 
+
+   DB::connection('bale_bale')->table("order")->insert($table_records);
+
+   return redirect('index');
+
+}
+
+        
     
 
     public function storeHomestay(Request $request){

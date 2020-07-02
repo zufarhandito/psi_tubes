@@ -162,7 +162,7 @@
                   <p>Fasilitas : {{$h->fasilitas}}</p>
                   <h1>Rp.{{$h->harga}} </h1>
                   <div class="card-footer">
-                      <a class="btn btn-primary" onclick="return confirm('Are you sure?')" href="">Sewa</a>
+                      <a href="{{ url('index') }}" class="btn btn-xs btn-info pull-right">Sewa</a>
                      
 
                   </div>
@@ -189,7 +189,7 @@
             <div class="pr-5 first-step">
               <span class="text-black">01.</span>
               <span class="custom-icon flaticon-house text-black"></span>
-              <h3 class="text-dark">Register Homestay</h3>
+              <h3 class="text-dark">cari homestay</h3>
             </div>
           </div>
 
@@ -197,7 +197,7 @@
             <div class="pr-5 second-step">
               <span class="text-black">02.</span>
               <span class="custom-icon flaticon-coin text-black"></span>
-              <h3 class="text-dark">Verify Homestay</h3>
+              <h3 class="text-dark">Bayar homestay</h3>
             </div>
           </div>
 
@@ -205,7 +205,7 @@
             <div class="pr-5">
               <span class="text-black">03.</span>
               <span class="custom-icon flaticon-home text-black"></span>
-              <h3 class="text-dark">Outstanding Homestays.</h3>
+              <h3 class="text-dark">Pengalaman terindah anda</h3>
             </div>
           </div>
         </div>

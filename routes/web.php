@@ -76,9 +76,11 @@ Route::get('showuser', function () {
     return view(['users' => $user]);
 });
 
+Route::get('landing-page', 'DashboardController@createOrder');
+Route::post('landing-page','DashboardController@storeOrder');
 Route::get('stock/add','StockController@create');
 Route::post('stock/add','StockController@store');
-
+Route::get('users', 'UserChartController@index');
 Route::get('stocks','StockController@indexdua');
 Route::get('stock/chart','StockController@chart');
 Route::get('/homestay', 'DashboardController@index');
