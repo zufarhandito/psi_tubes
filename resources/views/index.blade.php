@@ -214,13 +214,7 @@
     @endif
     <div class="card-footer">
                       <a class="btn btn-primary" href="">Homestay Terlaris</a>
-
-                  </div>
-
-                  <div class="card-footer">
-                      <a class="btn btn-primary" href="">Pendapatan Anda</a>
-
-                  </div>
+                    </div>
 
       <div class="row ml-2">
           <h1>List Homestay</h1>

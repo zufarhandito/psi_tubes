@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/css/bootstrap-select.min.css">
     </head>
     <body>
-        <div class="container">
+         <div class="container">
           <br />
           <form action="{{url('stock/add')}}" method="post">
             {{csrf_field()}}
@@ -25,14 +25,20 @@
                <input type="text" class="form-control" id="stockPrice" name="stockPrice">
              </div>
              <div class="form-group">
-               <label for="stockPrice">Waktu Pesan:</label>
-               <select class="selectpicker" name="stockYear">
-                  <option value="1991">1991</option>
-                  <option value="1992">1992</option>
-                  <option value="1993">1993</option>
-                  <option value="1994">1994</option>
-                  <option value="1995">1995</option>
-                  <option value="1996">1996</option>
+               <label for="stockPrice">Waktu Order (Bulan) :</label>
+               <select class="selectPicker" name="stockYear">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option><option value="1">1991</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
               </select>
             </div>
              <button type="submit" class="btn btn-primary">Submit</button>
