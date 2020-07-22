@@ -162,7 +162,8 @@
                   <p>Fasilitas : {{$h->fasilitas}}</p>
                   <h1>Rp.{{$h->harga}} </h1>
                   <div class="card-footer">
-                      <a href="{{ url('index') }}" class="btn btn-xs btn-info pull-right">Sewa</a>
+                      <a href="" class="btn btn-xs btn-info pull-right" onclick="return confirm('Untuk Konfirmasi Silahkan WA +62 852-4531-3333');"
+  >Sewa</a>
                      
 
                   </div>

@@ -48,7 +48,7 @@
                   data: {
                       labels:Labels,
                       datasets: [{
-                          label: 'Berapa kali di pesan',
+                          label: 'Pendapatan',
                           data: Prices,
                           borderWidth: 1
                       }]

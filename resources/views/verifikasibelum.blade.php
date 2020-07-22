@@ -218,9 +218,10 @@
               <div class="card shadow mb-4">
                   <div class="card-body">
                       <h3>{{$h->nama_homestay}}</h3>
-                      <p>{{$h->deskripsi}}</p>
-                      <p>{{$h->fasilitas}}</p>
-                      <p>{{$h->alamat_lengkap}}</p>
+                      <p>Deskripsi : {{$h->deskripsi}}</p>
+                      <p>Fasilitas : {{$h->fasilitas}}</p>
+                      <p>Alamat :{{$h->alamat_lengkap}}</p>
+                      <p>Harga : Rp.{{$h->harga}}</p>
                       
                   </div>
                   <div class="card-footer">

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Bale-Bale</title>
+  <title>SB Admin 2 - Sihomja</title>
 
   <!-- Custom fonts for this template-->
   
@@ -43,7 +43,7 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Bale-Bale</span></a>
+          <span>Sihomja</span></a>
       </li>
 
       <!-- Divider -->
@@ -51,7 +51,7 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        BALE-BALE
+        Sihomja
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
